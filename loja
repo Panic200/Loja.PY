@@ -1,0 +1,62 @@
+print('Bem vindo ao\n SchoolDevs\n')
+
+email = input('Informe o seu email: ')
+
+userRegi = input('Crie um usuário: ')
+senhaRegi = input('Informe uma senha: ')
+
+while True:
+    senhaconf = input('Confirme sua senha: ')
+    if senhaconf != senhaRegi:
+        print('Senha incorreta')
+    else:
+        print('Login criado')
+        break
+
+while True:
+    userLog = input('Coloque seu usuário: ')
+    if userLog != userRegi:
+        print('Usuário incorreto')
+    else:
+        senhaLog = input('Informe sua senha: ')
+        while True:
+            if senhaLog != senhaRegi:
+                print('Senha incorreta')
+            else:
+                print('Bem vindo')
+                
+                print('Essa é a página inicial.')
+                while True:
+                    pag = input('Temos as seções de Mouse, Teclado e Monitores. Qual você gostaria de ver? ')
+                    if pag.lower() == 'mouse':
+                        print('Temos os seguintes Mouses')
+                        print(' Mouse Gamer Redragon Cobra, RGB, 7 Botões')
+                        print(' Mouse Gamer HyperX Pulsefire Surge RGB 16000 DPI')
+                        print(' Mouse Gamer HyperX Pulsefire FPS PRO RGB')
+                        print(' Mouse Gamer Redragon King Cobra 2, RGB Chroma')
+                        break
+                    elif pag.lower() == 'teclado':
+                        print('Temos os seguintes Teclados')
+                        print(' Teclado com fio USB Logitech K120 Resistente')
+                        print(' Teclado Mecânico Gamer HyperX Alloy MKW100')
+                        print(' Teclado Multi Slim Resistente à Água, ABNT2, Preto')
+                        print(' Teclado Mecânico Gamer Redragon Kumara, RGB, Switch Outemu Brown')
+                        break
+                    elif pag.lower() == 'monitores':
+                        print('Esses são os seguintes Monitores que temos')
+                        print(' Monitor Gamer LG 21.5 LED Full HD, 75Hz, 5ms, HDMI, FreeSync')
+                        print(' Monitor Gamer LG UltraGear 27 Full HD, 144Hz, 1ms, IPS, HDMI e DisplayPort')
+                        print(' Monitor Gamer Husky Snow 23.6 LED Full HD, Curvo, 165Hz, 1ms, HDMI ')
+                        print(' Monitor Gamer LG 26 IPS, Ultra Wide, 75Hz, Full HD, 1ms, FreeSync Premium')
+                        break
+                    else:
+                        print('Opção inválida. Tente novamente.')
+                while True:
+                    pagi = input('Gostaria de ver mais algo (S/N)? ')
+                    if pagi.lower() == 's':
+                        break
+                    elif pagi.lower() == 'n':
+                        print('Agradecemos o seu tempo')
+                        exit()
+                    else:
+                        print('Opção inválida. Tente novamente.')
